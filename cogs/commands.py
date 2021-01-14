@@ -42,7 +42,7 @@ class Commands(commands.Cog, name="Commands"):
 
     
     @commands.command()
-    async def botinvite(self, ctx):
+    async def invite(self, ctx):
         """Gives you the invite link for the bot"""
         link = discord.utils.oauth_url(self.bot.user.id, permissions=discord.Permissions(SEND_MESSAGES = True, 
                                                                                          MANAGE_MESSAGES = True,
